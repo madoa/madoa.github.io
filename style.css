@@ -18,3 +18,16 @@ div#hozNavBar {
   width:100%;
   text-align: center;
 }
+
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+footer {
+  display: block;
+  width: 100%;
+  background:#d6ceea;
+  position: absolute;
+  bottom: 0;
+}
