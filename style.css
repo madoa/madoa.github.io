@@ -13,3 +13,8 @@ p {
   font-family: verdana;
   font-size: 15px;
 }
+
+div#hozNavBar {
+  width:100%;
+  text-align: center;
+}
