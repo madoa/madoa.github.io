@@ -19,6 +19,14 @@ div#hozNavBar {
   text-align: center;
 }
 
+li.fN {
+  background-color:#a373b7;
+  color: black;
+  border-style: dashed;
+    border-width:2px;
+    border-radius:2px;
+}/*FFEE32*/
+
 li a:hover {
   background-color: #555;
   color: white;
@@ -31,3 +39,40 @@ footer {
   position: absolute;
   bottom: 0;
 }
+
+.piLearn {
+    width: 100%;
+    height: 100%;
+    background: coral;
+    display: flex;
+}
+/*.block {
+    width: 100px;
+}*/
+
+.left {
+    width: 25%;
+    background:#ABCDEF;
+}
+.mid {
+    width: 50%;
+    background:#FEDCBA;
+}
+.right {
+    width: 25%;
+    background:#ABCDEF;
+}
+
+.piLearnTitle {
+    margin: auto;
+    width: 25%;
+    margin-bottom:1cm;
+}
+/*
+.piLearnImg {
+    height: auto;
+    width: auto;
+    max-width: 300px;
+    max-height: 300px;
+}
+*/
