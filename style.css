@@ -1,4 +1,7 @@
-body {
+
+
+
+/*body {
   background-color: #adffff;
 }
 
@@ -25,7 +28,7 @@ li.fN {
   border-style: dashed;
     border-width:2px;
     border-radius:2px;
-}/*FFEE32*/
+}
 
 li a:hover {
   background-color: #555;
@@ -46,10 +49,7 @@ footer {
     background: coral;
     display: flex;
 }
-/*.block {
-    width: 100px;
-}*/
-
+/*
 .left {
     width: 25%;
     background:#ABCDEF;
@@ -66,7 +66,7 @@ footer {
 .piLearnTitle {
     margin: auto;
     width: 25%;
-    margin-bottom:1cm;
+    margin-bottom:25px;
 }
 /*
 .piLearnImg {
