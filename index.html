@@ -1,68 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="style.css">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-<link rel="icon" type="image/x-icon" href="favicon.ico">
-<title>The Game</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/scripts.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>The Game</title>
 </head>
-  
-<style>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 3;
-  }
-  
-li {
-  display: inline;
-  }
- 
-</style>
-<body >
 
-<h1>Kimbo_Space</h1>
-
-<div id="hozNavBar">
-  <ul>
-    <li><a href="https://madoa.github.io/">Kimbo.space</a></li>
-    <li><a href="Projects.html">Projects</a></li>
-    <li><a href="https://madoa.github.io/contact.html">Contact</a></li>
-    <li><a href="Blog.html">Blog</a></li>
-    <li style="float:right"><a class="active" href="http://kimberlin.eu">Kimberlin.eu</a></li>
-  </ul>
+<body style="background: #00ccff">
+<div class="page-header" id="titleOfPage">
+    <h1 id="pHeader">Kimbo_Space</h1>
 </div>
 
 <nav class="navbar navbar-default">
     <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <a class="navbar-brand" href="">
-                <img alt="Brand" src="">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img src="favicon.ico" width="30" height="30" alt="">
             </a>
+
         </div>
-
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="http://kimbo.space/index.html">Home<span
+                        class="sr-only">(current)</span></a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Projects<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="http://kimbo.space/LearnPi.html">LearnPi</a></li>
+                        <li><a href="http://kimbo.space/Puzzles.html">Puzzles</a></li>
+                        <li><a href="http://kimbo.space/UrlS.html">URL shortener</a></li>
+                        <li><a href="http://kimbo.space/Quiz.html">Quiz</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://github.com/madoa">GitHub</a></li>
+                <li><a href="http://kimbo.space/Blog.html">Blog</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Color blind mode</a></li>
+            </ul>
+        </div>
     </div>
-
 </nav>
 
-<!--<script>alert("Hello!")</script>-->
-
-<footer>
-  <ul>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li>ColorBlind mode</li>
-  </ul>
-</footer>
+<nav>
+    <div class="navbar navbar-fixed-bottom">
+        <ul class="nav navbar-nav navbar">
+            <li><a href="#">c@kimbo.space</a></li>
+            <li><a href="http://kimbo.space/pub_key.html">Public Key</a></li>
+        </ul>
+    </div>
+</nav>
 
 </body>
-
-
-
 </html>
