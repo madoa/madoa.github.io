@@ -8,7 +8,7 @@ function genCode() {
     else if(x == "") {
         document.getElementById("generatedCode").innerHTML = "Please enter an ID!";
     }
-    else if(x.length != 14){
+    else if(x.length < 15){
         document.getElementById("generatedCode").innerHTML = "Please enter a valid ID!";
     }
     else if(y == ""){
