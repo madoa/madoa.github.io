@@ -1,5 +1,20 @@
-
-
+function genCode() {
+    let x = document.getElementById("ID").value;//Assign ID to variable
+    let y = document.getElementById("DA").value;//Assign date to variable
+    let d = "//";
+    if(x == "" && y ==""){
+        document.getElementById("generatedCode").innerHTML="Please enter ID & date!";
+    }
+    else if(x == "" || x.length < 12) {
+        document.getElementById("generatedCode").innerHTML = "Please enter a valid ID!";
+    }
+    else if(y == ""){
+        document.getElementById("generatedCode").innerHTML="Please enter a valid date!";
+    }
+    else {
+        document.getElementById("generatedCode").innerHTML=x+d+y;//Format = ID//DATE
+    }
+}
 
 
 /*function logpi(){
