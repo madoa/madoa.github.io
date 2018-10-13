@@ -1,14 +1,4 @@
-function checkPi() {
-    let txt="";
-    let pi="3.141592653589793238462643383279502884197169399375105820974944";
-    if (document.getElementById("typePi").toString() == pi.toString()) {
-        txt = "Spot on!";
-    } else {
 
-        txt = "Please try again!";
-    }
-    document.getElementById("result").innerHTML = txt;
-}
 
 
 
