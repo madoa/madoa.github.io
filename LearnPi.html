@@ -26,20 +26,17 @@
 <div class="page-header" id="titleOfPage">
     <h1 id="pHeader">Kimbo_Space</h1>
 </div>
-
 <script>
     let i = 0;
-    let txt = ": Learn Pi";
     let speed = 159;
+    let txt = ": Learn Pi!";
 
     function typewrite() {
-
         if (i < txt.length) {
             document.getElementById("pHeader").innerHTML +=txt.charAt(i);
             i++;
         }
     }
-    typewrite()
     setInterval(typewrite, speed);
 </script>
 
@@ -107,11 +104,6 @@
     </div>
 </nav>
 
-<script>
-    for(i=0;i<3;i++) {
-        console.log(logpi())
-    }
-</script>
 <nav>
     <div class="navbar navbar-fixed-bottom">
         <ul class="nav navbar-nav navbar">
