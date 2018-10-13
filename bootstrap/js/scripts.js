@@ -10,7 +10,6 @@ function genCode() {
     }
     else if(x.length != 14){
         document.getElementById("generatedCode").innerHTML = "Please enter a valid ID!";
-        console.log(x.length);
     }
     else if(y == ""){
         document.getElementById("generatedCode").innerHTML="Please enter a valid date!";
