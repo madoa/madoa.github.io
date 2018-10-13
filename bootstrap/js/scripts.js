@@ -9,7 +9,7 @@ function genCode() {
         document.getElementById("generatedCode").innerHTML = "Please enter an ID!";
     }
     else if(x.length < 15){
-        document.getElementById("generatedCode").innerHTML = "Please enter a valid ID!";
+        document.getElementById("generatedCode").innerHTML = "v";
     }
     else if(y == ""){
         document.getElementById("generatedCode").innerHTML="Please enter a valid date!";
