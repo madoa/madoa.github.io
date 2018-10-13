@@ -5,11 +5,8 @@ function genCode() {
     if(x == "" && y ==""){
         document.getElementById("generatedCode").innerHTML="Please enter ID & date!";
     }
-    else if(x == "") {
-        document.getElementById("generatedCode").innerHTML = "Please enter an ID!";
-    }
-    else if(x.length < 15){
-        document.getElementById("generatedCode").innerHTML = "v";
+    else if(x == "" || x.length < 15) {
+        document.getElementById("generatedCode").innerHTML = "Please enter an valid ID!";
     }
     else if(y == ""){
         document.getElementById("generatedCode").innerHTML="Please enter a valid date!";
