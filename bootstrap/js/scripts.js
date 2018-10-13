@@ -1,7 +1,6 @@
 function genCode() {
     let x = document.getElementById("ID").value;//Assign ID to variable
     let y = document.getElementById("DA").value;//Assign date to variable
-    console.log(x.length)
     let d = "//";
     if(x == "" && y ==""){
         document.getElementById("generatedCode").innerHTML="Please enter ID & date!";
@@ -11,6 +10,7 @@ function genCode() {
     }
     else if(x.length != 14){
         document.getElementById("generatedCode").innerHTML = "Please enter an ID!";
+        console.log(x.length);
     }
     else if(y == ""){
         document.getElementById("generatedCode").innerHTML="Please enter a valid date!";
