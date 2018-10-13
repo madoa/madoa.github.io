@@ -86,8 +86,9 @@
                     <input type="text" id="ID" name="caid" min="12" placeholder="CN-XXXXXXXXXXX"required maxlength="14" size="20"/><!--CN-AD30928FB28-->
                     <label for="DA">DATE:</label>
                     <input type="date" id="DA" name="date" required/><br>
-                    <input type="button" value="Generate code" onclick="genCode()"><br><br>
+                    <input type="button" value="Generate code" onclick="genCode()" onsubmit="genCode()"><br><br>
                     <p id="generatedCode"></p>
+                </form>
                 </div>
             </div>
         </div>
