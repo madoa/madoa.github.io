@@ -28,18 +28,19 @@
 </div>
 
 <script>
-    var i = 0;
-    var txt = ': Learn Pi!';
-    var speed = 50;
+    let i = 0;
+    let txt = ': ' + 'Learn Pi!';
+    let speed = 159;
 
     function typewrite() {
+
         if (i < txt.length) {
             document.getElementById("pHeader").innerHTML +=txt.charAt(i);
             i++;
         }
     }
     typewrite()
-    setInterval(typewrite, 159);
+    setInterval(typewrite, speed);
 </script>
 
 <nav class="navbar navbar-default">
@@ -79,13 +80,38 @@
                 <li><a href="http://kimbo.space/Blog.html">Blog</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Color blind mode</a></li>
+                <li><a href="#">Color blind mode</a></li>md
 
             </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+        </div>
+    </div>
+</nav>
+<nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8" style="background-color:yellow;">
+                PiLearner
+                <div>
+                    <form style="align-content: center" id="form1">
+                        Type Pi:<br>
+                        <input type="submit" value="Check manually" id="btn11" onclick="test()">
+                        <input type="text" size="30" placeholder="3."><br>
+                        <br>
+                    </form>
+                </div>
+            </div>
+            <div class="col-sm-4" style="background-color:pink;">
+                Best attempts:
+            </div>
+        </div>
+    </div>
 </nav>
 
+<script>
+    for(i=0;i<3;i++) {
+        console.log(logpi())
+    }
+</script>
 <nav>
     <div class="navbar navbar-fixed-bottom">
         <ul class="nav navbar-nav navbar">
