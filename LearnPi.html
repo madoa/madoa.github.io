@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="bootstrap/js/scripts.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/scripts.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <title>The Game</title>
@@ -86,13 +87,12 @@
         <div class="row">
             <div class="col-sm-8" style="background-color:yellow;">
                 PiLearner
-                <div>
-                    <form style="align-content: center" id="typePi">
-                        Type Pi, and click to check how you did:<br>
-                        <input type="submit" value="Check manually" id="btn11">
-                        <input type="text" size="30" placeholder="3."><br>
-                        <br>
-                    </form>
+                <p>Enter Pi and click to check!</p>
+                <input id="typePi" type="text" placeholder="3.">
+                <button onclick="checkPi()">Check manually!</button>
+
+                <p id="result"></p>
+
                 </div>
             </div>
             <div class="col-sm-4" style="background-color:pink;">
@@ -101,11 +101,7 @@
         </div>
     </div>
 </nav>
-<script>
-    window.onload = function() {
-        alert("h");
-    }
-</script>
+
 <nav>
     <div class="navbar navbar-fixed-bottom">
         <ul class="nav navbar-nav navbar">
