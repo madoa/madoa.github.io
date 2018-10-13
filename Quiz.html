@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="bootstrap/js/scripts.js"></script>
@@ -59,20 +60,20 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-3" style="background-color:yellow;">
-                <img src="img/m1.png">
-                <p>Jed</p>
-            </div>
-            <div class="col-sm-3 text-justify: right" style="background-color:pink;">
-                <img src="img/m2.png">
-                <p>Anne</p>
-            </div>
-            <div class="col-sm-3" style="background-color:yellow;">
-                <img src="img/m3.png">
-                <p>Dave</p>
+                <img class="center" src="img/m1.png">
+                <p class="text-center">Jed, 30</p>
             </div>
             <div class="col-sm-3" style="background-color:pink;">
-                <img src="img/m4.png">
-                <p>Pam</p>
+                <img class="center" src="img/m2.png">
+                <p class="text-center">Anne, 23</p>
+            </div>
+            <div class="col-sm-3" style="background-color:yellow;">
+                <img class="center" src="img/m3.png">
+                <p class="text-center">Dave, 27</p>
+            </div>
+            <div class="col-sm-3" style="background-color:pink;">
+                <img class="center" src="img/m4.png">
+                <p class="text-center">Pam, 25</p>
             </div>
         </div>
     </div>
@@ -81,10 +82,10 @@
             <div class="col-sm-12 text-center">
                 <h3>Please enter your ID & date</h3>
                 <label for="ID">ID:</label>
-                <input type="text" id="ID" name="caid" required maxlength="14" size="20"/><!--f-->
+                <input type="text" id="ID" name="caid" placeholder="CN-XXXXXXXXXXX"required maxlength="14" size="20"/><!--CN-AD30928FB28-->
                 <label for="DA">DATE:</label>
                 <input type="date" id="DA" name="date" required/><br>
-                <input type="submit" value="Generate unique quiz ID"
+                <input type="submit" value="Generate unique quiz ID">
                 </div>
             </div>
         </div>
