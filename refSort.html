@@ -58,20 +58,14 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-3" style="background-color:yellow;">
-                <p >Placeholder</p>
+                <p>Placeholder</p>
             </div>
             <div class="col-sm-6" style="background-color:pink;">
-                <textarea id="myInputText"></textarea>
-                <button type="button" onclick="myFunction()">Try it</button>
-                <p id="demo"></p>
+                <textarea id="refInput" rows="20" cols="60"></textarea>
+                <button type="button" onclick="refSort()">Sort my references!</button>
+                <p id="refOutput"></p>
             </div>
-<script>
-function myFunction() {
-    var x = document.getElementById("myInputText").value;
-    document.getElementById("demo").innerHTML = x;
-}
-</script>
-<!--            <div class="col-sm-6" style="background-color:pink;">
+<!--y is broke? <div class="col-sm-6" style="background-color:pink;">
                 <form name="frm2" id="frm2">
                     <label for "srtRefta">ET:</label>
                     <textarea id="srtRefta" rows="10" cols="50" placeholder="Please paste list of references">
