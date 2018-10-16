@@ -58,9 +58,20 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-3" style="background-color:yellow;">
-                <p id="srtRefOutput"></p>
+                <p >Placeholder</p>
             </div>
             <div class="col-sm-6" style="background-color:pink;">
+                <textarea id="myInputText"></textarea>
+                <button type="button" onclick="myFunction()">Try it</button>
+                <p id="demo"></p>
+            </div>
+<script>
+function myFunction() {
+    var x = document.getElementById("myInputText").value;
+    document.getElementById("demo").innerHTML = x;
+}
+</script>
+<!--            <div class="col-sm-6" style="background-color:pink;">
                 <form name="frm2" id="frm2">
                     <label for "srtRefta">ET:</label>
                     <textarea id="srtRefta" rows="10" cols="50" placeholder="Please paste list of references">
@@ -68,29 +79,7 @@
                     <input type="button" value="Sort my references" onclick="sortRef()" onsubmit="sortRef()"><br><br>
                     <p id="srtRefOutput"></p>
                 </form><br><br>
-                <form name="frm3" id="frm3">
-                    <label for="ID">ID:</label>
-                    <input type="text" id="ID" name="caid" min="14" placeholder="CN-XXXXXXXXXXX"required maxlength="14" size="20"/><!--CN-AD30928FB28-->
-                    <label for="DA">DATE:</label>
-                    <input type="date" id="DA" name="date" required/><br>
-                    <input type="button" value="Generate code" onclick="genCode()" onsubmit="genCode()"><br><br>
-                    <p id="generatedCode"></p>
-                </form>
-            </div>
-            <div>
-                Address:<br>
-<textarea id="myTextarea">
-342 Alvin Road
-Ducksburg</textarea>
-
-<p>Click the button to alert the contents of the text area.</p>
-
-<button type="button" onclick="myFunction()">Try it</button>
-
-<p id="demo"></p>
-
-
-            </div>
+            </div>-->
             <div class="col-sm-3" style="background-color:yellow;">
                 <p>Carlson, A & Pope, BM 2009, ‘The “Big Deal”: A survey of how libraries are responding and what the alternatives are’, The Serials, Librarian, vol. 57, no. 4, pp. 380-398. Available from: Taylor & Francis Online. [28 September 2015].</p><br>
                 <p>Johnson, P 2009, Fundamentals of collection development and management, 2nd edn, ALA Editions, Chicago.</p><br>
@@ -101,12 +90,7 @@ from: http://www.library.uwa.edu.au/information-resources/collections/management
         </div>
     </div>
 </nav>
-<script>
-function myFunction() {
-    var x = document.getElementById("myTextarea").value;
-    document.getElementById("demo").innerHTML = x;
-}
-</script>
+
 <!--
 Get x
 Sort alphabetically, recursion?
