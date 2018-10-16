@@ -66,7 +66,15 @@
                         </textarea>
                         <input type="button" value="Sort my references" onclick="sortRef()" onsubmit="sortRef()"><br><br>
                         <p id="srtRefOutput"></p>
-                    </form>
+                    </form><br><br>
+                <form name="frm3" id="frm3">
+                    <label for="ID">ID:</label>
+                    <input type="text" id="ID" name="caid" min="14" placeholder="CN-XXXXXXXXXXX"required maxlength="14" size="20"/><!--CN-AD30928FB28-->
+                    <label for="DA">DATE:</label>
+                    <input type="date" id="DA" name="date" required/><br>
+                    <input type="button" value="Generate code" onclick="genCode()" onsubmit="genCode()"><br><br>
+                    <p id="generatedCode"></p>
+                </form>
             </div>
             <div class="col-sm-3" style="background-color:yellow;">
                 <p>Carlson, A & Pope, BM 2009, ‘The “Big Deal”: A survey of how libraries are responding and what the alternatives are’, The Serials, Librarian, vol. 57, no. 4, pp. 380-398. Available from: Taylor & Francis Online. [28 September 2015].</p><br>
