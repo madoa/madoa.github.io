@@ -21,7 +21,7 @@ function sortRef() {
     let refList = document.getElementById("refInput").value.split('\n');//List of references to sort through/give back
     refList = refList.sort();
     console.log(refList);//Debugging
-    document.getElementById("refOutput").innerHTML=ref;
+    document.getElementById("refOutput").innerHTML=refList;
 }
 
 //var enteredText = document.getElementById("textArea").value;
