@@ -20,9 +20,8 @@ function sortRef() {
     //let ref = document.getElementById("refInput").value;
     let refList = document.getElementById("refInput").value.split('\n');//List of references to sort through/give back
     refList=refList.sort();
-    refList=refList.join(<br>);
     console.log(refList);//Debugging
-    document.getElementById("refOutput").innerHTML=refList;
+    document.getElementById("refOutput").innerHTML=refList.join("\n");
 }
 
 //var enteredText = document.getElementById("textArea").value;
