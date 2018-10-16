@@ -16,10 +16,9 @@ function genCode() {//Generates unique Quiz code
     }
 }
 
-function sortRef() {//To accept a list of line break separated references, order them, and then display them.
-    let r = document.getElementByID("srtRefta").value;
-    
-    document.getElementById("srtRefOutput").innerHTML=r;
+function sortRef() {
+    var ref = document.getElementById("refInput").value;
+    document.getElementById("refOutput").innerHTML=ref;
 }
 
 /*function logpi(){
