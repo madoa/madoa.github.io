@@ -18,7 +18,7 @@ function genCode() {//Generates unique Quiz code
 
 function sortRef() {
     //let ref = document.getElementById("refInput").value;
-    refList = [];
+    let refList = [];
     let refList = document.getElementById("refInput").value.split('\n');//List of references to sort through/give back
     refList = refList.sort();
     console.log(refList);//Debugging
