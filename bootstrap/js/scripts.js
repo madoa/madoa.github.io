@@ -17,9 +17,15 @@ function genCode() {//Generates unique Quiz code
 }
 
 function sortRef() {
-    var ref = document.getElementById("refInput").value;
+    let ref = document.getElementById("refInput").value;
+    let refList = [];//List of references to sort through/give back
+    let stringArray = document.getElementById("refInput").value.split('\n');
+    console.log(stringArray);
     document.getElementById("refOutput").innerHTML=ref;
 }
+
+//var enteredText = document.getElementById("textArea").value;
+//var numberOfLineBreaks = (enteredText.match(/\n/g)||[]).length;
 
 /*function logpi(){
     let pi="3.141592653589793238462643383279502884197169399375105820974944";
