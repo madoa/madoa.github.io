@@ -57,10 +57,7 @@
 <nav>
     <div class="container">
         <div class="row">
-            <div class="col-sm-3" style="background-color:yellow;">
-                <p>Placeholder</p>
-            </div>
-            <div class="col-sm-6" style="background-color:pink;">
+            <div class="col-sm-8" style="background-color:pink;">
                 <textarea rows="20" cols="60" id="refInput"></textarea>
                 <button type="button" onclick="sortRef()">Sort my references!</button>
                 <p id="refOutput"></p>
@@ -74,32 +71,12 @@
                     <p id="srtRefOutput"></p>
                 </form><br><br>
             </div>-->
-            <div class="col-sm-3" style="background-color:yellow;">
-                <p>Carlson, A & Pope, BM 2009, ‘The “Big Deal”: A survey of how libraries are responding and what the alternatives are’, The Serials, Librarian, vol. 57, no. 4, pp. 380-398. Available from: Taylor & Francis Online. [28 September 2015].</p><br>
-                <p>Johnson, P 2009, Fundamentals of collection development and management, 2nd edn, ALA Editions, Chicago.</p><br>
-                <p>Thompson, K, Wilder, R & Button, L 2000, ‘Impact of bundled databases on serials acquisitions in academic libraries’, The Serials, Librarian, vol. 38, no. 3-4, pp. 213-218. Available from: Taylor & Francis Online. [28 September 2015].</p><br>
-                <p>University of Western Australia Library 2015, Collection management principles and policies. Available 
-from: http://www.library.uwa.edu.au/information-resources/collections/management. [14 October 2015].</p>
+            <div class="col-sm-4" style="background-color:yellow;">
+                <p id="refOutput"></p>
             </div>
         </div>
     </div>
 </nav>
-
-<!--
-Get x
-Sort alphabetically, recursion?
-print out x
-
-
-Future features:
-Select type of referencing system?
-Put instructions on screen (line break separation)
-
-
-??:
-enteredText = textareaVariableName.val();
-numberOfLineBreaks = (enteredText.match(/\n/g)||[]).length;
-characterCount = enteredText.length + numberOfLineBreaks;
 
 <nav>
     <div class="navbar navbar-fixed-bottom">
