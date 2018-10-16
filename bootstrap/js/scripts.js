@@ -1,4 +1,4 @@
-function genCode() {
+function genCode() {//Generates unique Quiz code
     let x = document.getElementById("ID").value;//Assign ID to variable
     let y = document.getElementById("DA").value;//Assign date to variable
     let d = "//";
@@ -16,6 +16,11 @@ function genCode() {
     }
 }
 
+function sortRef() {//To accept a list of line break separated references, order them, and then display them.
+    let r = document.getElementByID("srtRefta").value;
+    
+    document.getElementById("srtRefOutput").innerHTML=r;
+}
 
 /*function logpi(){
     let pi="3.141592653589793238462643383279502884197169399375105820974944";
