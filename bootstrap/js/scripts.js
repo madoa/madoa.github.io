@@ -39,15 +39,15 @@ function sortRef() { //v2, adds new line option
 
 /*let array=["bob","alice","morgan"];//testing
 
-function indent(x,y) {
-    let sp=" ";
+function indent(x, y) {
+    let sp = " ";
     let rIndentList = x;
     let rIndentQty = y;
-    let spToAdd = sp.repeat(y);
-    for(var c=0;c < rIndentList.length; c++) {
-        rIndentList[c] = spToAdd + rIndentList[c];
+    for (var c = 0; c < rIndentList.length; c++) {
+        rIndentList[c] = sp.repeat(y) + rIndentList[c];
     }
-    return(rIndentList);
+    return rIndentList;
+
 }
 */
 
@@ -75,4 +75,6 @@ function indent(x,y) {
         alert("Please try again");
     }
 }
+
+
 */
