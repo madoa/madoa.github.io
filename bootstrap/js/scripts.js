@@ -37,35 +37,23 @@ function sortRef() { //v2, adds new line option
 
 }
 
-
-/*
-let array=["bob","alice","morgan"];
+/*let array=["bob","alice","morgan"];//testing
 
 function indent(x,y) {
+    let sp=" ";
     let rIndentList = x;
     let rIndentQty = y;
-    for(let i = rIndentList.length; i++;) {
-        for(let j=0;j<rIndentQty;j++)
-            x.append(" ")
+    let spToAdd = sp.repeat(y);
+    for(var c=0;c < rIndentList.length; c++) {
+        rIndentList[c] = spToAdd + rIndentList[c];
     }
-    console.log(refIndented)
+    return(rIndentList);
 }
+*/
 
-let array=["bob","alice","morgan"];
-
-function indent(x,y) {
-    let rIndentList = x;
-    let rIndentQty = y;
-    for(let i = rIndentList.length; i++;) {
-
-    }
-    console.log(x)
-}
-
-indent(array,3) */
 
 //var enteredText = document.getElementById("textArea").value;
-//var numberOfLineBreaks = (enteredText.match(/\n/g)||[]).length;
+//var numberOfLineBreaks = (enteredText.match(/\n/g)||[]).length; RegEx
 
 /*function logpi(){
     let pi="3.141592653589793238462643383279502884197169399375105820974944";
