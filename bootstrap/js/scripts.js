@@ -37,6 +37,33 @@ function sortRef() { //v2, adds new line option
 
 }
 
+
+/*
+let array=["bob","alice","morgan"];
+
+function indent(x,y) {
+    let rIndentList = x;
+    let rIndentQty = y;
+    for(let i = rIndentList.length; i++;) {
+        for(let j=0;j<rIndentQty;j++)
+            x.append(" ")
+    }
+    console.log(refIndented)
+}
+
+let array=["bob","alice","morgan"];
+
+function indent(x,y) {
+    let rIndentList = x;
+    let rIndentQty = y;
+    for(let i = rIndentList.length; i++;) {
+
+    }
+    console.log(x)
+}
+
+indent(array,3) */
+
 //var enteredText = document.getElementById("textArea").value;
 //var numberOfLineBreaks = (enteredText.match(/\n/g)||[]).length;
 
