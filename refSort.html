@@ -71,6 +71,7 @@
         </div>
     </div>
 </nav>
+
 <nav>
     <div class="container">
         <div class="row">
@@ -79,6 +80,7 @@
                 <form>
                     <input type="radio" name="spacing" value="with" id="with"> With line spacing<br>
                     <input type="radio" name="spacing" value="wout" id="wout"> No line spacing<br>
+                    <input type="number" name="indent" value="indent" if="indent" placeholder="min:0, max:10" min="0" max="10" style="width: 80px"> Number of spaces to indent<br>
                 </form>
                 <button type="button" onclick="sortRef()">Sort my references!</button>
                 <p id="test"></p>
