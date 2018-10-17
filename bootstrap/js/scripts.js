@@ -21,6 +21,7 @@ function sortRef() { //v2, adds new line option
     let refList = document.getElementById("refInput").value.split('\n');//List of references to sort through/give back
     refList=refList.sort();//sort references into alphabetical order
     console.log(refList);//Debugging
+    //**if (document.getElementById().value checked, perform appropriate indentation
     for (let i = refList.length-1; i--;) {//remove any extra new lines
         if (refList[i] === "") refList.splice(i, 1);
     }
