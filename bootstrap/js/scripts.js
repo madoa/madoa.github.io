@@ -26,6 +26,26 @@ function sortRef() {
     document.getElementById("refOutput").innerHTML=refList.join('<br>');
 }
 
+/* -Add option to remove line separation or add it
+   -In case that we want:
+   get list, clean it, append new line as well
+refList = ["","a","z","t","f",""];
+
+console.log(refList);
+
+refList=refList.sort();
+
+for (var i = refList.length-1; i--;) {
+if (refList[i] === "") refList.splice(i, 1);
+}
+
+console.log(refList);
+======================================
+if option 1:
+
+else option 2:
+*/
+
 //var enteredText = document.getElementById("textArea").value;
 //var numberOfLineBreaks = (enteredText.match(/\n/g)||[]).length;
 
