@@ -58,10 +58,10 @@
 <nav>
     <div class="container">
         <div class="row">
-            <div class="col-slm-12" style=background-color:grey>
+            <div class="col-slm-12" style=background-color:lightgrey>
                 <h3>Reference list sorter</h3>
                 <p>Please paste a list of references to be sorted.<br>
-                    Click the button to get your sorted list!</p><br
+                    Click the button to get your sorted list (leave selection blank for default, <i>with</i> line spacing)</p><br>
                 <p>e.g.<br>
                 Team, R.C., 2013. R: A language and environment for statistical computing.<br>
                 Diffie, W. and Hellman, M., 1976. New directions in cryptography. IEEE transactions on Information Theory, 22(6), pp.644-654.<br>
@@ -76,6 +76,10 @@
         <div class="row">
             <div class="col-sm-6" style="background-color:pink;">
                 <textarea rows="20" cols="60" id="refInput"></textarea><br>
+                <form>
+                    <input type="radio" name="spacing" value="with" id="with"> With line spacing<br>
+                    <input type="radio" name="spacing" value="wout" id="wout"> No line spacing<br>
+                </form>
                 <button type="button" onclick="sortRef()">Sort my references!</button>
                 <p id="test"></p>
                 <br>

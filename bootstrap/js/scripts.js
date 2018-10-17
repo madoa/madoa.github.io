@@ -16,35 +16,26 @@ function genCode() {//Generates unique Quiz code
     }
 }
 
-function sortRef() {
+function sortRef() { //v2, adds new line option
     //let ref = document.getElementById("refInput").value;
     let refList = document.getElementById("refInput").value.split('\n');//List of references to sort through/give back
-    refList=refList.sort();
+    refList=refList.sort();//sort references into alphabetical order
     console.log(refList);//Debugging
-    refList.delete("");
+    for (let i = refList.length-1; i--;) {//remove any extra new lines
+        if (refList[i] === "") refList.splice(i, 1);
+    }
     console.log(refList);//Debugging
-    document.getElementById("refOutput").innerHTML=refList.join('<br>');
+    if (document.getElementById("with").checked) {
+        document.getElementById("refOutput").innerHTML=refList.join('<br><br>');
+    }
+    else if(document.getElementById("wout").checked) {
+        document.getElementById("refOutput").innerHTML=refList.join('<br>');
+    }
+    else {
+        document.getElementById("refOutput").innerHTML=refList.join('<br><br>');
+    }
+
 }
-
-/* -Add option to remove line separation or add it
-   -In case that we want:
-   get list, clean it, append new line as well
-refList = ["","a","z","t","f",""];
-
-console.log(refList);
-
-refList=refList.sort();
-
-for (var i = refList.length-1; i--;) {
-if (refList[i] === "") refList.splice(i, 1);
-}
-
-console.log(refList);
-======================================
-if option 1:
-
-else option 2:
-*/
 
 //var enteredText = document.getElementById("textArea").value;
 //var numberOfLineBreaks = (enteredText.match(/\n/g)||[]).length;
