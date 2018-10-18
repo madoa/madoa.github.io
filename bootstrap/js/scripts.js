@@ -27,6 +27,7 @@ function sortRef() { //v2, adds new line option
     }
     console.log(refList);//Debugging
     let iQty = document.getElementbyID("indentQty").value;
+    console.log(iQty);
     
     if (iQty != 0) {
         refList = indent(refList,iQty);
