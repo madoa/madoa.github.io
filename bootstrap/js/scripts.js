@@ -29,7 +29,7 @@ function sortRef() { //v2, adds new line option
 
     if (iQty > 0 && iQty < 10) {
         refList = indent(refList,iQty);
-        console.log(iQty + "b"
+        console.log(iQty + "b");
     }
     
     console.log(iQty + "c");
