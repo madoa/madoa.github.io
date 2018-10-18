@@ -26,6 +26,12 @@ function sortRef() { //v2, adds new line option
         if (refList[i] === "") refList.splice(i, 1);
     }
     console.log(refList);//Debugging
+    let iQty = document.getElementbyID("indentQty").value;
+    
+    if (iQty != 0) {
+        refList = indent(refList,iQty);
+    }
+    
     if (document.getElementById("with").checked) {
         document.getElementById("refOutput").innerHTML=refList.join('<br><br>');
     }
@@ -38,8 +44,7 @@ function sortRef() { //v2, adds new line option
 
 }
 
-/*let array=["bob","alice","morgan"];//testing
-
+//let array=["bob","alice","morgan"];//testing
 function indent(x, y) {
     let sp = " ";
     let rIndentList = x;
@@ -50,7 +55,7 @@ function indent(x, y) {
     return rIndentList;
 
 }
-*/
+
 
 
 //var enteredText = document.getElementById("textArea").value;
