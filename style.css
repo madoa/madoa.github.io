@@ -5,6 +5,10 @@
     width: 100%;
 }
 
+#refOutput {
+    white-space: pre-wrap;
+}
+
 /*body {
   background-color: #adffff;
 }
