@@ -26,7 +26,7 @@ function sortRef() { //v2, adds new line option
         if (refList[i] === "") refList.splice(i, 1);
     }
     //console.log(refList);//Debugging
-    let iQty = document.getElementbyID("indentQty").value;
+    let iQty = document.getElementbyId("indentQty").value;
     
     console.log(iQty);
     
