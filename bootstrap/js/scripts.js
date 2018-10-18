@@ -26,7 +26,7 @@ function sortRef() { //v2.2, adds
     }
     let iQty = document.getElementById("indentQty").value;
 
-    if (iQty > 0 && iQty < 10) {//Adds indents, if necessary
+    if (iQty > 0 && iQty <= 10) {//Adds indents, if necessary
         refList = indent(refList,iQty);
     }
     
