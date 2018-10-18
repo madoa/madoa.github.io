@@ -16,7 +16,7 @@ function genCode() {//Generates unique Quiz code
     }
 }
 
-function sortRef() { //v2.2, adds 
+function sortRef() { //v2.2, adds indent functionality
     let refList = document.getElementById("refInput").value.split('\n');//List of references to sort through/give back
     
     refList=refList.sort();//sort references into alphabetical order
