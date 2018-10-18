@@ -27,10 +27,14 @@ function sortRef() { //v2, adds new line option
     }
     //console.log(refList);//Debugging
     let iQty = document.getElementById("indentQty").value;
+    console.log(iQty + "a");
+
+    if (iQty > 0 && iQty < 10) {
+        refList = indent(refList,iQty);
+        console.log(iQty + "b"
+    }
     
-    console.log(iQty);
-    refList = indent(refList,iQty);
-    console.log(refList);
+    console.log(iQty + "c");
     if (document.getElementById("with").checked) {
         document.getElementById("refOutput").innerHTML=refList.join('<br><br>');
     }
