@@ -30,7 +30,7 @@ function sortRef() { //v2, adds new line option
     
     console.log(iQty);
     
-    if (iQty != 0) {
+    if (iQty != '0') {
         refList = indent(refList,iQty);
         console.log(refList);
     }
