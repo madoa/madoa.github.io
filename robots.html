@@ -61,47 +61,14 @@
     <div class="container">
         <div class="row">
             <div class="col-slm-12" style=background-color:lightgrey>
-                <h3>Reference list sorter</h3>
-                <p>Please paste a list of references to be sorted.<br>
-                    Click the button to get your sorted list (leave selection blank for default, <i>with</i> line spacing)</p><br>
-                <p>e.g.<br>
-                Team, R.C., 2013. R: A language and environment for statistical computing.<br>
-                Diffie, W. and Hellman, M., 1976. New directions in cryptography. IEEE transactions on Information Theory, 22(6), pp.644-654.<br>
-                Mell, P. and Grance, T., 2011. The NIST definition of cloud computing.<br>
-                </p>
-            </div>
-        </div>
-    </div>
-</nav>
-
-<nav>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6" style="background-color:pink;">
-                <textarea rows="20" cols="60" id="refInput"></textarea><br>
-                <form>
-                    <input type="radio" name="spacing" value="with" id="with"> With line spacing<br>
-                    <input type="radio" name="spacing" value="wout" id="wout"> No line spacing<br>
-                    <input type="number" name="indent" id="indentQty" placeholder="max:10" min="1" max="10"> Number of spaces to indent<br>
+                <h3>robots.txt retrieval</h3>
+                <p>Please paste a list of URLs.<br>
+                <textarea rows="20" cols="60" id="robInput"></textarea><br>
                 </form>
-                <button type="button" onclick="sortRef()">Sort my references!</button>
-                <p id="test"></p>
-                <br>
-                <p>_</p><br>
-            </div>
-<!--y is broke? <div class="col-sm-6" style="background-color:pink;">
-                <form name="frm2" id="frm2">
-                    <label for "srtRefta">ET:</label>
-                    <textarea id="srtRefta" rows="10" cols="50" placeholder="Please paste list of references">
-                    </textarea>
-                    <input type="button" value="Sort my references" onclick="sortRef()" onsubmit="sortRef()"><br><br>
-                    <p id="srtRefOutput"></p>
-                </form><br><br>
-            </div>-->
-            <div class="col-sm-6" style="background-color:yellow;">
-                <p id="refOutput"></p>
-                <!--<textarea id="refOutput" rows="10" cols="50">-->
-                </textarea>
+                <button type="button" onclick="getRob()">Get my r!</button>
+                <p id="test">test</p>
+                <p id="robOutput">output</p>
+                </p>
             </div>
         </div>
     </div>
