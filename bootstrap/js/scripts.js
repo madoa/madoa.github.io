@@ -53,6 +53,22 @@ function indent(x, y) {
     return rIndentList;
 }
 
+function getRob() {
+    let urlList = document.getElementById("robInput").value.split('\n');//List of URLs to check through
+    
+    urlList=urlList.sort();//sorts URLs into alphabetical order - needed for rob?
+    
+    for (let i = urlList.length-1; i--;) {//remove any extra new lines
+        if (urlList[i] === "") urlList.splice(i, 1);
+    }
+	console.log(urlList);//["d", "d", "f", "f", "f"] - iterate through this with GET
+    document.getElementById("robOutput").innerHTML=urlList.join('<br>');
+}
+
+function getTxt(x) {//GETs robots.txt contents
+	let url=x;
+	return 1;
+}
 
 
 //var enteredText = document.getElementById("textArea").value;
