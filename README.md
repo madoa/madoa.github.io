@@ -8,6 +8,6 @@ Go to http://kimbo.space/refSort.html for an academic reference list sorter. It 
 
 Extra options to:
 
--Add line break between reference
+Add line break between reference
 
--Add indent
+Add indent
