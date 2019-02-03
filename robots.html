@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
@@ -12,73 +12,32 @@
     <title>The Game</title>
 </head>
 
-<body style="background: #00ccff">
+<body style="background: lightgrey">
 <div class="page-header" id="titleOfPage">
-    <h1 id="pHeader">Kimbo_Space</h1>
+    <h1 id="pHeader">Charity email</h1>
 </div>
 
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">
-                <img src="favicon.ico" width="30" height="30" alt="">
-            </a>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li><a href="http://kimbo.space/index.html">Home<span class="sr-only">(current)</span></a></li>
-                <li class="dropdown active">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false">Projects<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-						<li><a href="http://kimbo.space/refSort.html">Ref Sort</a></li>
-						<li><a href="http://kimbo.space/robots.html">Robots</a></li>
-                        <li><a href="http://kimbo.space/LearnPi.html">LearnPi</a></li>
-                        <li><a href="http://kimbo.space/Puzzles.html">Puzzles</a></li>
-                        <li><a href="http://kimbo.space/UrlS.html">URL shortener</a></li>
-                        <li><a href="http://kimbo.space/Quiz.html">Quiz</a></li>
-                    </ul>
-                </li>
-                <li><a href="https://github.com/madoa">GitHub</a></li>
-                <li><a href="http://kimbo.space/Blog.html">Blog</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Color blind mode</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
 <nav>
     <div class="container">
         <div class="row">
-            <div class="col-slm-12" style=background-color:lightgrey>
-                <h3>robots.txt retrieval</h3>
-                <p>Please paste a list of URLs.<br>
-                <textarea rows="20" cols="60" id="robInput"></textarea><br>
+            <div class="col-sm-3" style="background-color:pink;">
+                <textarea rows="10" cols="30" id="refInput"></textarea><br>
+                <form>
+                    <input type="radio" name="spacing" value="with" id="with"> With line spacing<br>
+                    <input type="radio" name="spacing" value="wout" id="wout"> No line spacing<br>
+                    <input type="number" name="indent" id="indentQty" placeholder="max:10" min="1" max="10"> Number of spaces to indent<br>
                 </form>
-                <button type="button" onclick="getRob()">Get my r!</button>
-                <p id="test">test</p>
-                <p id="robOutput">output</p>
-                </p>
+                <button class="btn-success" onclick="makeLetter()">Click me to make letters</button><br><br>
+                <button class="btn-success" onclick="sortRef()">Click me to access sortRef</button>
+
+                <p id="test"></p>
+                <br>
+                <p>_</p><br>
+            </div>
+            <div class="col-sm-9" style="background-color:lightgrey;border:1px solid black">
+                <p id="refOutput"></p>
             </div>
         </div>
-    </div>
-</nav>
-
-<nav>
-    <div class="navbar navbar-fixed-bottom">
-        <ul class="nav navbar-nav navbar">
-            <li><a href="#">c@kimbo.space</a></li>
-            <li><a href="http://kimbo.space/pub_key.html">Public Key</a></li>
-        </ul>
     </div>
 </nav>
 
