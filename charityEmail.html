@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/scripts.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>The Game</title>
+</head>
+
+<body style="background: lightgrey">
+<div class="page-header" id="titleOfPage">
+    <h1 id="pHeader">Charity email</h1>
+</div>
+
+<nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3" style="background-color:pink;">
+                <textarea rows="10" cols="30" id="refInput"></textarea><br>
+                <form>
+                    <input type="radio" name="spacing" value="with" id="with"> With line spacing<br>
+                    <input type="radio" name="spacing" value="wout" id="wout"> No line spacing<br>
+                    <input type="number" name="indent" id="indentQty" placeholder="max:10" min="1" max="10"> Number of spaces to indent<br>
+                </form>
+                <button class="btn-success" onclick="makeLetter()">Click me to make letters</button><br><br>
+                <button class="btn-success" onclick="sortRef()">Click me to access sortRef</button>
+
+                <p id="test"></p>
+                <br>
+                <p>_</p><br>
+            </div>
+            <div class="col-sm-9" style="background-color:lightgrey;border:1px solid black">
+                <p id="refOutput"></p>
+            </div>
+        </div>
+    </div>
+</nav>
+
+</body>
+</html>
