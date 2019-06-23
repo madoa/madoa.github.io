@@ -70,6 +70,13 @@ function getTxt(x) {//GETs robots.txt contents
 	return 1;
 }
 
+function si(x,y){
+    localStorage.setItem(x,y);
+}
+
+function gi(x){
+    return localStorage.getItem(x);
+}
 
 //var enteredText = document.getElementById("textArea").value;
 //var numberOfLineBreaks = (enteredText.match(/\n/g)||[]).length; RegEx
