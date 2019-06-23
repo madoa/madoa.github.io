@@ -71,15 +71,22 @@
       <div class="col-md-8 text-center" style=background-color:lightgrey>
         <h1 class="CryptoInfo">Thank you for purchasing with us!</h1>
         <h2 class="CryptoInfo">Please consider filling out our survey and let us know how we can improve our service</h2>
-        <strong style="color: #000000;">In general, were you satisfied with your purchase experience?</strong>
-        <p><a href="https://survey.survicate.com/0df1b3df8c00c6c0/?aid=1029285" target="_blank" rel="nofollow">Yes</a></p>
-        <p><a href="https://survey.survicate.com/0df1b3df8c00c6c0/?aid=1029286" target="_blank" rel="nofollow">No</a></p>
+        <br>
+        <strong style="color: #000000;">Survicate: In general, were you satisfied with your purchase experience?</strong>
+        <p><a class="followSurveyY" href="https://survey.survicate.com/0df1b3df8c00c6c0/?aid=1029285" target="_blank" rel="nofollow">Yes</a></p>
+        <p><a class="followSurveyN" href="https://survey.survicate.com/0df1b3df8c00c6c0/?aid=1029286" target="_blank" rel="nofollow">No</a></p>
       </div>
     </div>
   </div>
 </nav>
-
-
+<script>
+  $(".followSurveyY").click(function() {
+    console.log('User was happy with purchase experience.');
+  });
+  $(".followSurveyN").click(function() {
+    console.log('User was not happy with purchase experience.');
+  })
+</script>
 
 <nav>
   <div class="navbar navbar-fixed-bottom">
