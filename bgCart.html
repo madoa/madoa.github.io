@@ -12,7 +12,7 @@
   <title>The Game</title>
 </head>
 
-<body style="background: #00ccff">
+<body style="background: #00add9">
 <div class="page-header" id="titleOfPage">
   <h1 id="pHeader">Kimbo_Space</h1>
 </div>
@@ -34,8 +34,7 @@
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="https://kimbo.space/index.html">Home<span
-                class="sr-only">(current)</span></a></li>
+        <li><a href="https://kimbo.space/index.html">Home<span class="sr-only">(current)</span></a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
              aria-expanded="false">Projects<span class="caret"></span></a>
@@ -74,11 +73,9 @@
         <br><br>
         <button class="BGBIntro BGBConfirm" onclick="ri()">Remove selected items from cart</button>
         <br><br>
-        <table id="cTable" class="table" style="background-color: lightgrey;border-bottom-right-radius: 15px">
-
-        </table>
+        <table id="cTable" class="table" style="background-color: lightgrey;border-bottom-right-radius: 15px"></table>
         <br>
-        <button class="BGBIntro BGBConfirm">Proceed to payment >></button>
+        <a href="bgCheckout.html"><button class="BGBIntro BGBConfirm">Proceed to payment >></button></a>
         <br><br>
       </nav>
     </nav>
@@ -113,7 +110,6 @@
       $('#hInfo').text('It looks like you have nothing in your cart yet.');
     }
   }
-
   lt();
 </script>
 
@@ -135,7 +131,6 @@
   document.getElementsByTagName('head')[0].appendChild(scRec);
   //]]>
 </script>
-
 
 </body>
 </html>

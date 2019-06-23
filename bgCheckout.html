@@ -12,7 +12,7 @@
   <title>The Game</title>
 </head>
 
-<body style="background: #00ccff">
+<body style="background: #00add9">
 <div class="page-header" id="titleOfPage">
   <h1 id="pHeader">Kimbo_Space</h1>
 </div>
@@ -69,11 +69,22 @@
     <nav class="col-md-8">
       <nav class="col-md-12 text-center BGBSign" style="background: #e2ac8f">
         <h1 class="BGBTitle">Board Game Bazaar Checkout</h1>
-        <h4 class="BGBIntro">Review what you have in your cart!</h4>
-        <a href="https://kimbo.space/boardGameBazaar.html"><button class="BGBIntro BGBConfirm">Take me back to the shop</button></a>
+        <h4 class="BGBIntro">Please enter your details below</h4>
+        <a href="https://kimbo.space/boardGameBazaar.html"><button class="BGBIntro BGBConfirm">Take me back to the shop</button></a>&nbsp;<a href="https://kimbo.space/bgCart.html"><button class="BGBIntro BGBConfirm">View my cart</button></a>
         <br><br>
-        <button class="BGBIntro BGBConfirm">Checkout</button>
-        <br><br>
+        <span class="BGBIntro">
+          <label for="bgEmail">Email:</label><br>
+          <input id="bgEmail" type="text"><br>
+          <label for="bgName">Name on card:</label><br>
+          <input id="bgName" type="text"><br>
+          <label for="bgCNo">Card number:</label><br>
+          <input id="bgCNo" type="text"><br>
+          <label for="bgExp">Card expiry date:</label><br>
+          <input id="bgExp" type="text" style="width:8%" placeholder="MM/YY"><br>
+          <label for="bgCC">Card security code:</label><br>
+          <input id="bgCC" type="text" style="width:8%"><br><br>
+          <button class="btn-success">Pay</button><br><br>
+        </span>
       </nav>
     </nav>
   </nav>
