@@ -85,6 +85,7 @@
                         <span id="displayCrypto"></span>
                         <form id="buyC"></form>
                     </nav>
+                    <a href="#purchase">aaaaaaaaaaaa</a>
                 </nav>
             </div>
         </div>
@@ -96,7 +97,7 @@
         let c = this.value;
         $('#buyC').empty();
         $('#displayCrypto').html(cList[c].desc);
-        $('#displayCrypto').append('<br><br><button id="purchaseC" class="btn-info" onclick="genForm()">Purchase ' + cList[c].fn + '</button><br><br>');
+        $('#displayCrypto').append('<br><br><a href="buyCrypto.html#purchase"><button id="purchaseC" class="btn-info" onclick="genForm() ">Purchase ' + cList[c].fn + '</button></a><br><br>');
     });
 
     function genForm(){
