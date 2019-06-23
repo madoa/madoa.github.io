@@ -69,6 +69,7 @@
     <nav class="col-md-8">
       <nav class="col-md-12 text-center BGBSign" style="background: #e2ac8f">
         <h1 class="BGBTitle">Board Game Bazaar Checkout</h1>
+        <h3 class="BGBIntro" id="tDetails"></h3>
         <h4 class="BGBIntro">Please enter your payment details below</h4>
         <a href="https://kimbo.space/boardGameBazaar.html"><button class="BGBIntro BGBConfirm">Take me back to the shop</button></a>&nbsp;<a href="https://kimbo.space/bgCart.html"><button class="BGBIntro BGBConfirm">View my cart</button></a>
         <br><br>
@@ -101,6 +102,18 @@
 </nav>
 
 <script type="text/javascript">
+  let list = JSON.parse(gi('inCart'));
+
+  if(list){
+    let rt=0;
+    Object.keys(list).forEach(function(e){
+      rt+=list[e].qty * list[e].prc;
+    });
+    $('#tDetails').text('Your total comes to £' + rt);
+  } else {
+    $('#tDetails').text('It looks like you have nothing in your cart yet.');
+  }
+
   //SessionCam Client Integration v6.0
   //<![CDATA[
   var scRec=document.createElement('SCRIPT');
