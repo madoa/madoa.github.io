@@ -17,10 +17,6 @@
   <h1 id="pHeader">Kimbo_Space</h1>
 </div>
 
-<script>
-  let from = document.referrer;
-  console.log(from);
-</script>
 
 <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -71,7 +67,7 @@
       <div class="col-md-4" style=background-color:lightblue>
         <h1 class="CryptoInfo text-center">Congratulations!</h1>
         <img src="./img/shipped.jpg" style="height:100%;width:100%"/>
-        <h2 class="CryptoInfo text-center">Your crypto is on its way!</h2>
+        <h2 class="CryptoInfo text-center">Your <span id="pPurchased"></span> is on its way!</h2>
       </div>
       <div class="col-md-8 text-center" style=background-color:lightgrey>
         <h1 class="CryptoInfo">Thank you for purchasing with us!</h1>
@@ -84,8 +80,17 @@
     </div>
   </div>
 </nav>
+
 <script>
-  $(".followSurveyY").click(function() {
+  let from = document.referrer;
+  if(from === 'https://kimbo.space/buyCrypto.html'){
+    $('#pPurchased').text('crypto');
+  } else if (from === 'https://kimbo.space/bgCheckout.html'){
+    $('#pPurchased').text('equipment');
+  }
+  console.log(from);
+
+$(".followSurveyY").click(function() {
     console.log('User was happy with purchase experience.');
   });
   $(".followSurveyN").click(function() {
