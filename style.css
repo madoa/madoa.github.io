@@ -52,6 +52,15 @@
     margin-left: 10px;
 }
 
+.BGBPhoto2 {
+    border-radius: 10px;
+    border:2px solid black;
+    height:200px;
+    width:200px;
+    margin-top:4px;
+    margin-bottom:4px;
+}
+
 .BGBPhoto {
     border-radius: 10px;
     border:2px solid black;
@@ -67,6 +76,15 @@
     border-bottom-right-radius: 15px;
     margin-right: 10px;
     margin-left: 10px;
+}
+
+.BGBPAddToCart:hover {
+    background: forestgreen;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
 }
 
 .BGBConfirm {

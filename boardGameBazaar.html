@@ -175,7 +175,7 @@
             </nav>
             <nav class="col-xs-4">
                 <h3 class="BGBPTitle">Food</h3>
-                <p class="BGBPBackground"><img src="./img/bg11.jpeg" class="BGBPhoto"></p>
+                <p class="BGBPBackground"><img src="./img/bg11.jpeg" class="BGBPhoto2"></p>
                 <p class="BGBPBackgroundPrice">3.49</p>
                 <p class="BGBPAddToCart">Add to cart</p>
             </nav>
@@ -187,19 +187,19 @@
         <nav class="row text-center">
             <nav class="col-xs-4">
                 <h3 class="BGBPTitle">Ludo spares</h3>
-                <p class="BGBPBackground"><img src="./img/bg12.jpeg" class="BGBPhoto"></p>
+                <p class="BGBPBackground"><img src="./img/bg12.jpeg" class="BGBPhoto2"></p>
                 <p class="BGBPBackgroundPrice">4.99</p>
                 <p class="BGBPAddToCart">Add to cart</p>
             </nav>
             <nav class="col-xs-4">
                 <h3 class="BGBPTitle">Poker</h3>
-                <p class="BGBPBackground"><img src="./img/bg13.jpeg" class="BGBPhoto"></p>
+                <p class="BGBPBackground"><img src="./img/bg13.jpeg" class="BGBPhoto2"></p>
                 <p class="BGBPBackgroundPrice">9.99</p>
                 <p class="BGBPAddToCart">Add to cart</p>
             </nav>
             <nav class="col-xs-4">
                 <h3 class="BGBPTitle">Scrabble spares</h3>
-                <p class="BGBPBackground"><img src="./img/bg14.jpeg" class="BGBPhoto"></p>
+                <p class="BGBPBackground"><img src="./img/bg14.jpeg" class="BGBPhoto2"></p>
                 <p class="BGBPBackgroundPrice">5.99</p>
                 <p class="BGBPAddToCart">Add to cart</p>
             </nav>
@@ -211,13 +211,13 @@
         <nav class="row text-center">
             <nav class="col-xs-4">
                 <h3 class="BGBPTitle">Plain ol' dice</h3>
-                <p class="BGBPBackground"><img src="./img/bg15.jpeg" class="BGBPhoto"></p>
+                <p class="BGBPBackground"><img src="./img/bg15.jpeg" class="BGBPhoto2"></p>
                 <p class="BGBPBackgroundPrice">1.99</p>
                 <p class="BGBPAddToCart">Add to cart</p>
             </nav>
             <nav class="col-xs-4">
                 <h3 class="BGBPTitle">Monpoly spares</h3>
-                <p class="BGBPBackground"><img src="./img/bg16.jpeg" class="BGBPhoto"></p>
+                <p class="BGBPBackground"><img src="./img/bg16.jpeg" class="BGBPhoto2"></p>
                 <p class="BGBPBackgroundPrice">7.99</p>
                 <p class="BGBPAddToCart">Add to cart</p>
             </nav>
@@ -225,11 +225,14 @@
     </div>
 </nav>
 <script>
-    let l = $('h3');
-    console.log($(".col-xs-4"));
-
-    console.log(typeof l);
-
+    let c = '';
+    $('.BGBPhoto').hover(function(){
+        c = $(this).attr('src');
+        $(this).css('cursor','pointer');
+        $(this).attr('src',c.slice(0, -4) + "i" + c.slice(-4));
+    },function(){
+        $(this).attr('src',c);
+    });
 </script>
 <script>
     //iife
