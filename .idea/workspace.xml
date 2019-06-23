@@ -16,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/refSort.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="671">
-              <caret line="119" selection-start-line="119" selection-end-line="127" selection-end-column="9" />
+            <state relative-caret-position="238">
+              <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#nav#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -76,7 +76,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/buyCrypto.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="470">
@@ -161,7 +161,6 @@
         <option value="$PROJECT_DIR$/Projects.html" />
         <option value="$PROJECT_DIR$/bootstrap/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/contact.html" />
-        <option value="$PROJECT_DIR$/refSort.html" />
         <option value="$PROJECT_DIR$/UrlS.html" />
         <option value="$PROJECT_DIR$/Quiz.html" />
         <option value="$PROJECT_DIR$/LearnPi.html" />
@@ -175,6 +174,7 @@
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/bootstrap/js/scripts.js" />
         <option value="$PROJECT_DIR$/buyCrypto.html" />
+        <option value="$PROJECT_DIR$/refSort.html" />
       </list>
     </option>
   </component>
@@ -251,12 +251,12 @@
       <workItem from="1560956866609" duration="3885000" />
       <workItem from="1561033483678" duration="14000" />
       <workItem from="1561055676260" duration="1373000" />
-      <workItem from="1561102460572" duration="21592000" />
+      <workItem from="1561102460572" duration="21835000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93008000" />
+    <option name="totallyTimeSpent" value="93251000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="827" y="9" width="1623" height="903" extended-state="0" />
@@ -416,17 +416,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/boardGameBazaar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="81" column="50" selection-start-line="81" selection-start-column="50" selection-end-line="81" selection-end-column="50" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#nav#0;n#nav#0;n#nav#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#nav#0;n#nav#1;n#nav#0;n#nav#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
@@ -441,13 +430,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/refSort.html">
+    <entry file="file://$PROJECT_DIR$/boardGameBazaar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="671">
-          <caret line="119" selection-start-line="119" selection-end-line="127" selection-end-column="9" />
+        <state relative-caret-position="238">
+          <caret line="81" column="50" selection-start-line="81" selection-start-column="50" selection-end-line="81" selection-end-column="50" />
           <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#nav#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#nav#0;n#nav#0;n#nav#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#nav#0;n#nav#1;n#nav#0;n#nav#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -462,6 +451,17 @@
             <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refSort.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#nav#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
