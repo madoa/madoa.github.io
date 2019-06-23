@@ -66,7 +66,7 @@
     <div class="row">
       <div class="col-md-4" style=background-color:lightblue>
         <h1 class="CryptoInfo text-center">Congratulations!</h1>
-        <img src="./img/shipped.jpg" style="height:100%;width:100%"/>
+        <img id="shipped" src="./img/shipped.jpg" style="height:100%;width:100%"/>
         <h2 class="CryptoInfo text-center">Your <span id="pPurchased"></span> is on its way!</h2>
       </div>
       <div class="col-md-8 text-center" style=background-color:lightgrey>
@@ -88,6 +88,7 @@
   } else if (from === 'https://kimbo.space/bgCheckout.html'){
     $('#pPurchased').text('equipment');
     $('.CryptoInfo').css('font-family','Papyrus');
+    $('#shipped').attr('src','./img/shipped2.jpg');
   }
   console.log(from);
 

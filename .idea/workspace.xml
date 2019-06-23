@@ -44,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/success.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="86" column="36" lean-forward="true" selection-start-line="86" selection-start-column="36" selection-end-line="86" selection-end-column="36" />
+            <state relative-caret-position="595">
+              <caret line="89" column="50" selection-start-line="89" selection-start-column="50" selection-end-line="89" selection-end-column="50" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#nav#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -217,8 +217,8 @@
         <option value="$PROJECT_DIR$/Test.html" />
         <option value="$PROJECT_DIR$/UrlS.html" />
         <option value="$PROJECT_DIR$/bgCart.html" />
-        <option value="$PROJECT_DIR$/success.html" />
         <option value="$PROJECT_DIR$/bgCheckout.html" />
+        <option value="$PROJECT_DIR$/success.html" />
       </list>
     </option>
   </component>
@@ -295,12 +295,12 @@
       <workItem from="1560956866609" duration="3885000" />
       <workItem from="1561033483678" duration="14000" />
       <workItem from="1561055676260" duration="1373000" />
-      <workItem from="1561102460572" duration="48972000" />
+      <workItem from="1561102460572" duration="49287000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120388000" />
+    <option name="totallyTimeSpent" value="120703000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="833" y="68" width="1623" height="903" extended-state="0" />
@@ -567,8 +567,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/success.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="86" column="36" lean-forward="true" selection-start-line="86" selection-start-column="36" selection-end-line="86" selection-end-column="36" />
+        <state relative-caret-position="595">
+          <caret line="89" column="50" selection-start-line="89" selection-start-column="50" selection-end-line="89" selection-end-column="50" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#nav#1;n#body#0;n#html#0;n#!!top" expanded="true" />
