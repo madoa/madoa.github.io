@@ -72,39 +72,49 @@
         <h4 id="hInfo" class="BGBIntro">Review what you have in your cart!</h4>
         <a href="https://kimbo.space/boardGameBazaar.html"><button class="BGBIntro BGBConfirm">Take me back to the shop</button></a>
         <br><br>
-        <button class="BGBIntro BGBConfirm">Checkout</button>
+        <button class="BGBIntro BGBConfirm" onclick="ri()">Remove selected items from cart</button>
+        <br><br>
+        <table id="cTable" class="table" style="background-color: lightgrey;border-bottom-right-radius: 15px">
+
+        </table>
+        <br>
+        <button class="BGBIntro BGBConfirm">Proceed to payment >></button>
         <br><br>
       </nav>
     </nav>
   </nav>
 </nav>
-<br>
-
-<nav class="container">
-  <nav class="col-md-12" style="background-color: lightgrey">
-    <table id="cTable" class="table">
-      <tr>
-        <th>Item name</th>
-        <th>Item Qty</th>
-        <th>Item total</th>
-        <th>Delete</th>
-      </tr>
-    </table>
-  </nav>
-</nav>
 
 <script>
-  (function() {
+  //remove items
+  let ri = function(){
+    let list = JSON.parse(gi('inCart'));
+    $.each($("input[name='remItems']:checked"), function(){
+      let vtr = $($(this)).val();
+      delete list[vtr];
+    });
+    si('inCart',JSON.stringify(list));
+    lt();
+  };
+
+  //load table
+  function lt() {
+    $('#cTable').children().empty();
+    $('#cTable').append('<tr><th>Item name</th><th>Item Qty</th><th>Item single</th><th>Item total</th><th>Delete</th></tr>');
     let list = JSON.parse(gi('inCart'));
     if(list){
-      console.log(Object.keys(list));
+      let rt=0;
       Object.keys(list).forEach(function(e){
-        $('#cTable').append('<tr>' + '<th>' + e + '</th><th>' + list[e].qty + '</th><th>' + list[e].qty * list[e].prc + '</th><th><input type="checkbox"></th></tr>')
+        $('#cTable').append('<tr>' + '<th>' + e + '</th><th>' + list[e].qty + '</th><th>' + list[e].prc + '</th><th>' + list[e].qty * list[e].prc + '</th><th><input name="remItems" type="checkbox" value="' + e + '"></th></tr>')
+        rt += list[e].qty * list[e].prc;
       });
+      $('#cTable').append('<tr><th></th><th></th><th>Order total:</th><th>' + rt.toFixed(2) + '</th><th></th></tr>');
     } else {
-      $('#hInfo').text('It looks like you have nothing in your cart yet.')
+      $('#hInfo').text('It looks like you have nothing in your cart yet.');
     }
-  })();
+  }
+
+  lt();
 </script>
 
 <nav>
