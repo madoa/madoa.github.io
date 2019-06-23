@@ -85,7 +85,7 @@
                         <span id="displayCrypto"></span>
                         <form id="buyC"></form>
                     </nav>
-                    <a href="#purchase">aaaaaaaaaaaa</a>
+                    <a href="#purchase"></a>
                 </nav>
             </div>
         </div>
@@ -110,7 +110,8 @@
         $('#buyC').append('<br><label for="bcCardEx">Expiry date:</label><br><input id="bcCardEx" type="text" style="width:8%" placeholder="MM/YY">');
         $('#buyC').append('<br><label for="bcCardNm">Name on card:</label><br><input id="bcCardNm" type="text" placeholder="">');
         $('#buyC').append('<br><label for="bcCardCd">Card security code:</label><br><input id="bcCardCd" type="text" style="width:8%" placeholder="">');
-        $('#buyC').append('<br><br><button class="btn-success">Confirm purchase of ' + cName + '</button><br><br>')
+        $('#buyC').append('<br><label for="bcCAddr">' + cName + ' receiving address:</label><br><input id="bcCAddr" type="text" style="width:30%" placeholder="">');
+        $('#buyC').append('<br><br><a href="https://kimbo.space/success.html"><button class="btn-success">Confirm purchase of ' + cName + '</button></a><br><br>')
     }
 </script>
 

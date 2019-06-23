@@ -19,18 +19,37 @@
     font-weight: bold;
 }
 
+.BGBPic {
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
 
+.BGBSign {
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
 
 .BGBPTitle {
     background: darkgray;
     margin-bottom: 0;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .BGBPBackground {
     background: lightgray;
     margin-bottom: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.BGBPBackgroundPrice {
+    background: lightgray;
+    margin-bottom: 0;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .BGBPhoto {
@@ -46,6 +65,8 @@
     background: darkgray;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .BGBConfirm {

@@ -115,104 +115,104 @@ bgList = [
         "Title":"Cards Against Humanity",
         "img":"bg0.jpg",
         "inside":"bg0i.jpg",
-        "price":""
+        "price":10.99
     },
     {
         "Title":"Exploding Kittens",
         "img":"bg1.jpg",
         "inside":"bg1i.jpg",
-        "price":""
+        "price":9.99
     },
     {
         "Title":"Settlers of Catan",
         "img":"bg2.jpg",
         "inside":"bg2i.jpg",
-        "price":""
+        "price":15.99
     },
     {
         "Title":"Monopoly",
         "img":"bg3.jpg",
         "inside":"bg3i.jpg",
-        "price":""
+        "price":20.99
     },
     {
         "Title":"Town of Salem",
         "img":"bg4.jpg",
         "inside":"bg4i.jpg",
-        "price":""
+        "price":14.99
     },
     {
         "Title":"Pandemic",
         "img":"bg5.jpg",
         "inside":"bg5i.jpg",
-        "price":""
+        "price":19.99
     },
     {
         "Title":"Ticket To Ride",
         "img":"bg6.jpg",
         "inside":"bg6i.jpg",
-        "price":""
+        "price":20.99
     },
     {
         "Title":"Castle Panic",
         "img":"bg7.jpg",
         "inside":"bg7i.jpg",
-        "price":""
+        "price":5.99
     },
     {
         "Title":"Guess Who?",
         "img":"bg8.jpg",
         "inside":"bg8i.jpg",
-        "price":""
+        "price":10.99
     },
     {
         "Title":"Operation",
         "img":"bg9.jpg",
         "inside":"bg9i.jpg",
-        "price":""
+        "price":10.99
     },
     {
         "Title":"Mouse Trap",
         "img":"bg10.jpg",
         "inside":"bg10i.jpg",
-        "price":""
+        "price":12.99
     },
     //items that don't have what's inside
     {
         "Title":"Food",
         "img":"bg11.jpeg",
         "text":"",
-        "price":""
+        "price":3.49
     },
     {
         "Title":"Ludo spares",
         "img":"bg12.jpeg",
         "text":"",
-        "price":""
+        "price":4.99
     },
     {
         "Title":"Poker",
         "img":"bg13.jpeg",
         "text":"",
-        "price":""
+        "price":9.99
     },
     {
         "Title":"Scrabble spares",
         "img":"bg14.jpeg",
         "text":"",
-        "price":""
+        "price":5.99
     },
     {
         "Title":"Plain ol' dice",
         "img":"bg15.jpeg",
         "text":"",
-        "price":""
+        "price":1.99
     },
     {
         "Title":"Monopoly spares",
         "img":"bg16.jpeg",
         "text":"",
-        "price":""
+        "price":7.99
     },
 ];
 
