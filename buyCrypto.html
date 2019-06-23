@@ -63,19 +63,55 @@
 <nav>
     <div class="container">
         <div class="row">
-            <div class="col-slm-12" style=background-color:lightgrey>
-                <h3>robots.txt retrieval</h3>
-                <p>Please paste a list of URLs.<br>
-                <textarea rows="20" cols="60" id="robInput"></textarea><br>
-                </form>
-                <button type="button" onclick="getRob()">Get my r!</button>
-                <p id="test">test</p>
-                <p id="robOutput">output</p>
-                </p>
+            <div class="col-md-4" style=background-color:lightblue>
+                <h1 class="CryptoInfo text-center">Buy Crypto with Card!</h1>
+                <img src="./img/crypto.jpeg" style="height:100%;width:100%"/>
+            </div>
+            <div class="col-md-8" style=background-color:lightgrey>
+                <nav class="row container">
+                    <nav class="col-xs-3 CryptoInfo">
+                        <br><br><br>
+                        <select id="buyCrypto" style="width:100px">
+                            <option value="BTC">Bitcoin</option>
+                            <option value="LTC">Litecoin</option>
+                            <option value="ETH">Ethereum</option>
+                            <option value="XRP">Ripple</option>
+                            <option value="DGE">Dogecoin</option>
+                        </select>
+                        <br><br>
+                    </nav>
+                    <nav class="col-xs-9">
+                        <h1 class="CryptoInfo">Further information</h1>
+                        <span id="displayCrypto"></span>
+                        <form id="buyC"></form>
+                    </nav>
+                </nav>
             </div>
         </div>
     </div>
 </nav>
+
+<script>
+    $('#buyCrypto').on('change',function() {
+        let c = this.value;
+        $('#buyC').empty();
+        $('#displayCrypto').html(cList[c].desc);
+        $('#displayCrypto').append('<br><br><button id="purchaseC" class="btn-info" onclick="genForm()">Purchase ' + cList[c].fn + '</button><br><br>');
+    });
+
+    function genForm(){
+        let c = $('#buyCrypto').val();
+        let cName = cList[c].fn;
+        $('#buyC').empty();
+        $('#buyC').append('<label for="bcName">Number of ' + cName + ' (min: 1):</label><br><input id="bcName" type="number" style="width:8%" min="1" placeholder="">');
+        $('#buyC').append('<br><label for="bcName">Name:</label><br><input id="bcName" type="text" placeholder="">');
+        $('#buyC').append('<br><label for="bcCardNo">Card number:</label><br><input id="bcCardNo" type="text" placeholder="">');
+        $('#buyC').append('<br><label for="bcCardEx">Expiry date:</label><br><input id="bcCardEx" type="text" style="width:8%" placeholder="MM/YY">');
+        $('#buyC').append('<br><label for="bcCardNm">Name on card:</label><br><input id="bcCardNm" type="text" placeholder="">');
+        $('#buyC').append('<br><label for="bcCardCd">Card security code:</label><br><input id="bcCardCd" type="text" style="width:8%" placeholder="">');
+        $('#buyC').append('<br><br><button class="btn-success">Confirm purchase of ' + cName + '</button><br><br>')
+    }
+</script>
 
 <nav>
     <div class="navbar navbar-fixed-bottom">

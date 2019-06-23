@@ -9,6 +9,58 @@
     white-space: pre-wrap;
 }
 
+.BGBTitle {
+    font-family: Papyrus, serif;
+    font-weight: bold;
+}
+
+.BGBIntro {
+    font-family: Papyrus, serif;
+    font-weight: bold;
+}
+
+
+
+.BGBPTitle {
+    background: darkgray;
+    margin-bottom: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.BGBPBackground {
+    background: lightgray;
+    margin-bottom: 0;
+}
+
+.BGBPhoto {
+    border-radius: 10px;
+    border:2px solid black;
+    height:200px;
+    width:200px;
+    margin-top:4px;
+    margin-bottom:4px;
+}
+
+.BGBPAddToCart {
+    background: darkgray;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.BGBConfirm {
+    font-weight: bold;
+    border-color: saddlebrown;
+    background-color: sandybrown;
+    border-radius: 15px;
+}
+
+.CryptoInfo {
+    font-family: "Agency FB";
+    font-weight: bold;
+}
+
+
 /*body {
   background-color: #adffff;
 }
