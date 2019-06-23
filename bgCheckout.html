@@ -109,7 +109,7 @@
     Object.keys(list).forEach(function(e){
       rt+=list[e].qty * list[e].prc;
     });
-    $('#tDetails').text('Your total comes to £' + rt);
+    $('#tDetails').text('Your total comes to £' + rt.toFixed(2));
   } else {
     $('#tDetails').text('It looks like you have nothing in your cart yet.');
   }
