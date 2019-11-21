@@ -61,8 +61,44 @@ function getRob() {
     for (let i = urlList.length-1; i--;) {//remove any extra new lines
         if (urlList[i] === "") urlList.splice(i, 1);
     }
-	console.log(urlList);//["d", "d", "f", "f", "f"] - iterate through this with GET
+	//console.log(urlList);//["d", "d", "f", "f", "f"] - iterate through this with GET
+    urlList.forEach(function(e){
+        console.log("Checking site: " + e);
+        getSite(e);
+    });
     document.getElementById("robOutput").innerHTML=urlList.join('<br>');
+}
+
+function getSite(x) {
+    //let num = 2347436;
+    let urli = 'https://crossorigin.me/' + x + '/robots.txt';
+    //let ct = new(Date);
+    $.get({
+        url: urli,
+        cache: false,
+        success: function(response) {
+            /*var pR = $.parseHTML(response);
+            var r1 = $(pR).find('.ProfileName-AccountDisplay').text();
+            var r2 = $(pR).find('.ProfileUsername').text();
+            var r3 = $(pR).find('.ProfileDescription').text();
+            var r4 = $(pR).find('.ProfileSidebar-metadata:nth-child(1) span').text();
+            var r5 = $(pR).find('.ProfileSidebar-metadata:nth-child(2) span').text();
+            var r6 = $(pR).find('.ProfileSidebar-metadata:nth-child(3) span').text();
+            //var r7 = $(pR).find('.ProfileTwitterAccount').text();*/
+            var pR = $.parseHTML(response);
+            console.log(pR);
+            /*document.getElementById("r1").innerHTML = 'Name: ' + r1;
+            document.getElementById("r2").innerHTML = 'Dname: ' + r2;
+            document.getElementById("r3").innerHTML = 'Descr: ' + r3;
+            document.getElementById("r4").innerHTML = 'Broadcasts: ' + r4;
+            document.getElementById("r5").innerHTML = 'Followers: ' + r5;
+            document.getElementById("r6").innerHTML = 'Following: ' + r6;
+            //document.getElementById("r7").innerHTML = 'Twitter: ' + r7;
+            document.getElementById("r8").innerHTML = 'URL: ' + urli.substr(42);
+            document.getElementById("aao").innerHTML = 'Accurate as of approx: ' + ct.toUTCString();*/
+
+        }
+    });
 }
 
 function getTxt(x) {//GETs robots.txt contents
